@@ -1,0 +1,51 @@
+.header {
+    background-color: #40798C;
+    text-align: center;
+    text-shadow: whitesmoke 1px 1px 2px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: auto;
+    padding: 10px;
+    border: 2px solid #071108;
+    margin: 100px;
+    border-radius: 2%;
+}
+
+.card {
+    background-color: skyblue;
+    width: 300px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.card input {
+    flex: 1;               
+    height: 75%;
+    border: none;
+    outline: none;
+    padding: 0 18px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.card button {
+    height: 100%;
+    width: 45px;             /* square button */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card button img {
+    width: 22px;
+    height: 22px;
+}
