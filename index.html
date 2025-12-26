@@ -9,8 +9,32 @@
 <body>
     <div class="header"><h1>Weather Dashboard</h1></div>
     <div class="card">
-        <input type="text" placeholder="Enter city name" spellcheck="false">
-        <button><img src="img/search.png" alt="search"></button>
+
+        <div class="search-row">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="img/search.png" alt="search"></button>
+        </div>
+<div class="error">
+    <p>City name is invalid</p>
+</div>
+<div class="weather-info">
+    <p class="temp">22°C</p>
+    <p class="city">Bangalore</p>
+    <img class="weather-icon" src="img/cloudy.svg" alt="weather icon">
+    <div class="details">
+        <div class="col">
+            <p class="humidity">Humidity</p>
+            <img src="img/humidity.png" alt="humidity-icon" class="humidity-icon">
+            <p class="humidity-value">64%</p>
+        </div>
+        <div class="col">
+            <p class="wind-speed">Wind Speed</p>
+            <img src="img/wind.svg" alt="wind-icon" class="wind-icon">
+            <p class="wind-speed-value">5 km/h</p>
+        </div>
+    </div>
+</div>
+
     </div>
     <script src="script.js"></script>
 </body>

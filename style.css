@@ -14,14 +14,17 @@
 .card {
     background-color: skyblue;
     width: 300px;
-    height: 50px;
     margin: 20px auto;
+    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+                0 6px 20px rgba(0,0,0,0.19);
+
     display: flex;
-    align-items: center;
-    padding: 50px;
+    flex-direction: column;   
+    gap: 15px;                
 }
+
 
 .card input {
     flex: 1;               
@@ -35,11 +38,10 @@
 
 .card button {
     height: 100%;
-    width: 45px;             /* square button */
+    width: 45px;             
     background-color: transparent;
     border: none;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,4 +50,39 @@
 .card button img {
     width: 22px;
     height: 22px;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-info {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Copperplate;
+    font-weight: bold; 
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.humidity-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.weather-info {
+    display: none;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    display: none;
 }
